@@ -17,7 +17,7 @@ const ThemeToggle = () => {
         document.documentElement.setAttribute('data-theme', newTheme);
     };
     return (
-        <button onClick={toggleTheme} className="btn btn-ghost btn-primary btn-circle">
+        <button onClick={toggleTheme} className="btn btn-ghost btn-accent btn-circle">
             {theme === 'light' ? <MoonIcon className="h-5 w-5" /> : <SunIcon className="h-5 w-5" />}
         </button>
     )
